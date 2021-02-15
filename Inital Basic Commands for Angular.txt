@@ -1,0 +1,53 @@
+1. To install Angular cli
+
+After installing node js(minium requirement Node. js 10.13)
+
+Editor requirement is VS Code, Visual Studio or Ecllipse
+-----------------------------------------------------------
+
+Global installation
+npm install -g @angular/cli <enter>
+
+local installation->
+npm install  @angular/cli <enter>
+===============================================
+
+2. To update to Angular 9 from older version
+
+Step 1:Check current Version (ng --version )
+Step 2:update to Angular 8 first(npm install --no-save @angular/cli@^8.3.15)
+Step 3: ng update @angular/cli @angular/core --next  
+
+if you want to install Angular 9 specifically
+ng update @angular/cli@9 @angular/core@9  
+=================================================
+
+3.Another way to Upgrade to Angular 9
+
+Step-1: First, check the current version of your Angular CLI by using the ng --serve
+Step-2: Now, run the following command to uninstall your older version of Angular.
+npm uninstall -g angular-cli // For Windows Open Powershell on Administrator Mode    
+
+Now, verify and clear the cache by using the following commands.
+npm cache verify  
+
+npm cache clean 
+
+Now, install the latest Angular CLI by using the following command.
+npm install -g @angular/cli@latest 
+=======================================================
+
+4. To create new application using angular cli
+
+ng new <application name> <enter>
+
+=======================================================
+
+5. To run application
+Step-1=> Go to project directory
+
+Step-2=> Then run command as either npm start or ng serve
+
+to change the host or port number run below command
+
+ng serve --host 0.0.0.0 --port <port number>
